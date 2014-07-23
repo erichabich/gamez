@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+  {{! Document Settings }}
+  <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+  <meta http-equic="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+  {{! Page Meta }}
+  <title>Blog.fl.ag - {{meta_title}}</title>
+  <meta name="description" content="{{meta_description}}" />
+  <meta name="robots" content="nofollow, noindex" />
+
+  {{! Responsive Meta Tags }}
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="MobileOptimized" content="320" />
+  <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
+
+  {{! Style }}
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Nunito:300,400,700" />
+  <link rel="stylesheet" type="text/css" href="/assets/css/blog.fl.ag.css" />
+  <link rel="shortcut icon" type="image/png" href="/assets/img/favicon.png" />
+
+  {{! Scripts }}
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.min.js"></script>
+
+  {{! Ghost outputs important style and meta data with this tag }}
+  {{ghost_head}}
+</head>
+
+<body class="{{body_class}}">
+
+  {{! Header }}
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="col clearfix">
+
+          {{! Logo }}
+          <div class="logo module pull-left">
+            <a href="/"><img src="/assets/img/logo.svg" alt="Flag Logo" /></a>
+          </div>
+
+          {{! Navigation }}
+          <div class="navigation module text-right pull-right clearfix">
+            
+            {{! Previous Post Link }}
+            <div class="tooltip pull-left">
+              <div>
+                <a href="/" data-tooltip="prev">Previous Post</a>
+              </div>
+              <p class="tooltip-prev">Glassholes, Google Web Search, and Google Plus</p>
+            </div>
+            
+            {{! Next Post Link }}
+            <div class="tooltip pull-right">
+              <div>
+                <a href="/" data-tooltip="next">Next Post</a>
+              </div>
+              <p class="tooltip-next">Glassholes, Google Web Search, and Google Plus</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </header>
+
+  {{! Everything else gets inserted here }}
+  {{{body}}}
+
+  {{! Footer }}
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col text-center">
+
+          <ul>
+            <li><a href="/">Blog</a></li>
+            <li><a href="/archive">Archive</a></li>
+            <li><a href="#advertisements">Advertisements</a></li>
+            <li><a href="#prints">Prints</a></li>
+            <li><a href="#press">Press</a></li>
+            <li><a href="#team">Team</a></li>
+          </ul>
+
+          <p class="tagline">Flag is a phone and tablet app that prints your photos and</br>mails them to you, your family or friends, for free.</p>
+
+          <p class="ghost">Powered by<br/><a href="https://ghost.org/"><img src="/assets/img/Ghost-Logo.png"/></a></p>
+          
+          <p class="copyright">&copy; 2014 FLAG UNIVERSAL</p>
+        
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  {{! Ghost outputs important scripts and data with this tag }}
+  {{ghost_foot}}
+
+  {{! FitVids for responsive Videos }}
+  <script type="text/javascript" 
+  src="/assets/js/libs/jquery.fitvids.js"></script>
+  <script>
+    $(function () {
+      if(!Modernizr.touch){
+        $('.tooltip a').hover(
+          function () {
+            var name = $(this).data('tooltip');
+            name = '.tooltip-' + name;
+            $(name).show();
+          },
+          function () {
+            var name = $(this).data('tooltip');
+            name = '.tooltip-' + name;
+            $(name).hide();
+          }
+        );
+      }
+    });
+  </script>
+</body>
+</html>

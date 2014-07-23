@@ -1,0 +1,85 @@
+// -------------------
+//  Blog.fl.ag footer
+// -------------------
+
+@footer-background: #f3f3f3;
+@footer-border: darken(@footer-background, 5%);
+
+body > footer {
+  width: 100%;
+  background-color: @footer-background;
+  border-top: 1px solid @footer-border;
+
+  ul {
+    padding: 0;
+    margin-top: (@grid-gutter-width * 2);
+    margin-bottom: (@grid-gutter-width * 2);
+    list-style: none;
+  }
+
+  li {
+    padding-left: @grid-gutter-width;
+    padding-right: @grid-gutter-width;
+    font-size: (@font-size-base * .8);
+    line-height: (@font-size-base * 2);
+    letter-spacing: .0325em;
+    text-transform: uppercase;   
+    @media (min-width: @screen-sm-min) {
+      display: inline-block;
+    }
+  }
+
+  .tagline {
+    font-family: FuturaBTBook, Futura, Nunito, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: @line-height-base;
+    @media (min-width: @screen-sm-min) {
+      font-size: 22px;
+    }
+  }
+
+  .ghost {
+    font-size: @font-size-base * .5;
+    letter-spacing: .0425em;
+    text-transform: uppercase;
+    color: @gray;
+  }
+
+  .ghost img {
+    width: 58px;
+    opacity: .7;
+    .transition(0.1s);
+  }
+
+  .ghost img:hover {
+    opacity: 1;
+  }
+
+  .copyright {
+    overflow: hidden;
+    text-align: center;
+    font-size: @font-size-base * .5;
+    font-weight: normal;
+    color: @gray;
+    letter-spacing: .0725em;
+  }
+  .copyright:before,
+  .copyright:after {
+    background-color: #e8e8e8;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+  }
+  .copyright:before {
+    right: 1em;
+    margin-left: -50%;
+  }
+  .copyright:after {
+    left: 1em;
+    margin-right: -50%;
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "blog.fl.ag",
+  "version": "0.2.6",
+  "authors": [
+    "Alex Basalyga <alex@fl.ag>",
+    "Eric Habich <erichabich@gmail.com>"
+  ],
+  "homepage": "https://github.com/alexbasalyga/blog.fl.ag",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alexbasalyga/blog.fl.ag.git"
+  },
+  "private": true,
+  "scripts": {
+    "start": "grunt watch",
+    "postinstall": "grunt development"
+  },
+  "dependencies": {
+    "grunt": "0.4.x",
+    "grunt-contrib-less": "0.11.x",
+    "grunt-contrib-copy": "0.5.x",
+    "grunt-contrib-concat": "0.4.x",
+    "grunt-contrib-watch": "0.6.x"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "sole",
+  "version": "0.1.2",
+  "description": "Sole is a minimal LESS framework and accompanying workflow tool",
+  "author": "Alex Basalyga <alex@fl.ag>",
+  "homepage": "https://github.com/alexbasalyga/sole/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alexbasalyga/sole.git"
+  },
+  "private": true,
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "grunt": "0.4.x",
+    "grunt-contrib-connect": "0.8.x",
+    "grunt-contrib-jade": "0.12.x",
+    "grunt-contrib-less": "0.11.x",
+    "grunt-contrib-watch": "0.6.x"
+  }
+}

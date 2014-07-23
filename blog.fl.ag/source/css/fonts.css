@@ -1,0 +1,32 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 2734122, 2014-01-27T20:13:20-0500
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: Futura Light by Bitstream
+ * URL: http://www.myfonts.com/fonts/bitstream/futura/light/
+ * 
+ * Webfont: Futura Medium by Bitstream
+ * URL: http://www.myfonts.com/fonts/bitstream/futura/medium/
+ * 
+ * Webfont: Futura Heavy by Bitstream
+ * URL: http://www.myfonts.com/fonts/bitstream/futura/heavy/
+ *
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=2734122
+ * Licensed pageviews: 100,000
+ * Webfonts copyright: Copyright 1990-2003 Bitstream Inc. All rights reserved.
+ * 
+ * © 2014 MyFonts Inc
+*/
+
+@import url("//hello.myfonts.net/count/29b82a");
+@import url("//hello.myfonts.net/count/2aafd7");
+@font-face {font-family: 'FuturaBTLight';src: url('../fonts/29B82A_0_0.eot');src: url('../fonts/29B82A_0_0.eot?#iefix') format('embedded-opentype'),url('../fonts/29B82A_0_0.woff') format('woff'),url('../fonts/29B82A_0_0.ttf') format('truetype');}
+@font-face {font-family: 'FuturaBTMedium';src: url('../fonts/29B82A_1_0.eot');src: url('../fonts/29B82A_1_0.eot?#iefix') format('embedded-opentype'),url('../fonts/29B82A_1_0.woff') format('woff'),url('../fonts/29B82A_1_0.ttf') format('truetype');}
+@font-face {font-family: 'FuturaBTHeavy';src: url('../fonts/29B82A_2_0.eot');src: url('../fonts/29B82A_2_0.eot?#iefix') format('embedded-opentype'),url('../fonts/29B82A_2_0.woff') format('woff'),url('../fonts/29B82A_2_0.ttf') format('truetype');}
+@font-face {font-family: 'FuturaBTBook';src: url('../fonts/2AAFD7_0_0.eot');src: url('../fonts/2AAFD7_0_0.eot?#iefix') format('embedded-opentype'),url('../fonts/2AAFD7_0_0.woff') format('woff'),url('../fonts/2AAFD7_0_0.ttf') format('truetype');}

@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Sole style guide</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="sole.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <h1><strong>Sole style guide</strong></h1><br>
+      <div id="type">
+        <h2>1. Typography</h2>
+        <div id="type-headings">
+          <h3>1.1. Headings</h3>
+          <p>All HTML headings, <code>&lt;h1&gt;</code> through <code>&lt;h6&gt;</code>, are available. <code>.h1</code> through <code>.h6</code> classes are also available, for when you want to match the font styling of a heading but still want your text to be displayed inline. Create lighter, secondary text in any heading with a generic <code>&lt;small&gt;</code> tag or the <code>.small</code> class.</p>
+          <hr>
+          <h1>This is an &lt;h1&gt; heading</h1>
+          <h2>This is an &lt;h2&gt; heading</h2>
+          <h3>This is an &lt;h3&gt; heading</h3>
+          <h4>This is an &lt;h4&gt; heading</h4>
+          <h5>This is an &lt;h5&gt; heading</h5>
+          <h6>This is an &lt;h6&gt; heading</h6>
+          <hr>
+          <h1>This is an &lt;h1&gt; heading <small>And a &lt;small&gt; subtitle</small></h1>
+          <h2>This is an &lt;h2&gt; heading <small>And a &lt;small&gt; subtitle</small></h2>
+          <h3>This is an &lt;h3&gt; heading <small>And a &lt;small&gt; subtitle</small></h3>
+          <h4>This is an &lt;h4&gt; heading <small>And a &lt;small&gt; subtitle</small></h4>
+          <h5>This is an &lt;h5&gt; heading <small>And a &lt;small&gt; subtitle</small></h5>
+          <h6>This is an &lt;h6&gt; heading <small>And a &lt;small&gt; subtitle</small></h6>
+          <hr><br>
+        </div>
+        <div id="type-body">
+          <h3>1.2. Body copy</h3>
+          <div id="type-body-paragraphs">
+            <h4>1.2.1. Paragraphs</h4>
+            <p><em>Description</em></p>
+            <hr>
+            <p>This is a &lt;p&gt;-aragraph of dummy text. A style guide or style manual is a set of standards for the writing and design of documents, either for general use or for a specific publication, organization or field. The implementation of a style guide provides uniformity in style and formatting within a document and across multiple documents.</p>
+            <p>This is a shorter &lt;p&gt;-aragraph of dummy text. A set of standards for a specific organization is often known as "house style."</p>
+            <p>And one more &lt;p&gt;-aragraph of dummy text for good measure. Many publications (notably newspapers) use graphic design style guides to demonstrate the preferred layout and formatting of a published page. They often are extremely detailed in specifying, for example, which fonts and colors to use. Such guides allow a large design team to produce visually consistent work for the organization.</p>
+            <hr><br>
+          </div>
+          <div id="type-body-lead">
+            <h4>1.2.2. Lead paragraph</h4>
+            <p>Make a paragraph stand out by adding <code>.lead</code>.</p>
+            <hr>
+            <p class="lead">This is a .lead &lt;p&gt;-aragraph of dummy text. Some style guides focus on graphic design, focusing on such topics as typography and white space. Web site style guides cover a publication's visual and technical aspects, along with text.</p>
+            <hr><br>
+          </div>
+        </div>
+        <div id="type-inline">
+          <h3>1.3. Inline text elements</h3>
+          <div id="type-inline-marked">
+            <h4>1.3.1. Marked text</h4>
+            <p>For highlighting a run of text due to its relevance in another context, use the <code>&lt;mark&gt;</code> tag.</p>
+            <p>You may alternatively use an inline element with <code>.mark</code> in place of any <code>&lt;mark&gt;</code>.</p>
+            <hr>
+            <p>You can use the &lt;mark&gt; tag to <mark>highlight</mark> text.</p>
+            <hr><br>
+          </div>
+          <div id="type-inline-small">
+            <h4>1.3.2. Small text</h4>
+            <p>For de-emphasizing inline or blocks of text, use the <code>&lt;small&gt;</code> tag to set text at 85% the size of the parent. (Heading elements receive their own <code>font-size</code> for nested <code>&lt;small&gt;</code> elements.)</p>
+            <p>You may alternatively use an inline element with <code>.small</code> in place of any <code>&lt;small&gt;</code>.</p>
+            <hr>
+            <p><small>This line of text is meant to be treated as fine print.</small></p>
+            <hr><br>
+          </div>
+        </div>
+        <div id="type-alignment">
+          <h3>1.4. Alignment classes</h3>
+          <p>Easily realign text to components with text alignment classes.</p>
+          <hr>
+          <p class="text-left"><code>&lt;p class="text-left"&gt;</code>Left aligned text.<code>&lt;/p&gt;</code></p>
+          <p class="text-center"><code>&lt;p class="text-center"&gt;</code>Center aligned text.<code>&lt;/p&gt;</code></p>
+          <p class="text-right"><code>&lt;p class="text-right"&gt;</code>Right aligned text.<code>&lt;/p&gt;</code></p>
+          <p class="text-justify"><code>&lt;p class="text-justify"&gt;</code>Justified text.<code>&lt;/p&gt;</code></p>
+          <hr><br>
+        </div>
+        <div id="type-blockquotes">
+          <h3>1.5. Blockquotes</h3>
+          <div id="type-blockquotes-default">
+            <h4>1.5.1. Default blockquote</h4>
+            <p>Wrap <code>&lt;blockquote&gt;</code> around any HTML as the quote. For straight quotes, we recommend a <code>&lt;p&gt;</code>.</p>
+            <hr>
+            <blockquote>
+              <p>This is a standard &lt;blockquote&gt;.</p>
+            </blockquote>
+            <hr><br>
+          </div>
+          <div id="type-blockquotes-source">
+            <h4>1.5.2. Citing a source</h4>
+            <p>Add a <code>&lt;footer&gt;</code> for identifying the source of the blockquote.</p>
+            <p>You may alternatively use <code>&lt;small&gt;</code> or <code>.small</code> in place of <code>&lt;footer&gt;</code>.</p>
+            <hr>
+            <blockquote>
+              <p>This is a &lt;blockquote&gt; with a source.</p>
+              <footer>Someone famous</footer>
+            </blockquote>
+            <hr><br>
+          </div>
+          <div id="type-blockquotes-reverse">
+            <h4>1.5.3. Reversed blockquote</h4>
+            <p>Add <code>.blockquote-reverse</code> for a blockquote with right-aligned content.</p>
+            <p>You may alternatively use <code>.pull-right</code> in place of <code>.blockquote-reverse</code>.</p>
+            <hr>
+            <blockquote class="blockquote-reverse">
+              <p>This is a .blockquote-reverse with a source.</p>
+              <footer>Another famous person</footer>
+            </blockquote>
+            <hr><br>
+          </div>
+        </div>
+        <div id="type-lists">
+          <h3>1.6. Lists</h3>
+          <div id="type-lists-unstyled">
+            <h4>1.6.1. Unstyled list</h4>
+            <p>Add <code>.list-unstyled</code> to remove the default <code>list-style</code> and left margin on list items. This only applies to immediate children list items, meaning you will need to add the class for any nested lists as well.</p>
+            <hr>
+            <ul class="list-unstyled">
+              <li>Lorem ipsum dolor sit amet</li>
+              <li>Consectetur adipiscing elit</li>
+              <li>Integer molestie lorem at massa</li>
+              <li>Facilisis in pretium nisl aliquet</li>
+              <li>Nulla volutpat aliquam velit
+                <ul>
+                  <li>Phasellus iaculis neque</li>
+                  <li>Purus sodales ultricies</li>
+                  <li>Vestibulum laoreet porttitor sem</li>
+                  <li>Ac tristique libero volutpat at</li>
+                </ul>
+              </li>
+              <li>Faucibus porta lacus fringilla vel</li>
+              <li>Aenean sit amet erat nunc</li>
+              <li>Eget porttitor lorem</li>
+            </ul>
+            <hr><br>
+          </div>
+          <div id="type-lists-inline">
+            <h4>1.6.2. Inline lists</h4>
+            <p>Use <code>.list-inline</code> to place all list items on a single line with <code>display: inline-block;</code> and some light padding.</p>
+            <hr>
+            <ul class="list-inline">
+              <li>Lorem ipsum</li>
+              <li>Phasellus iaculis</li>
+              <li>Nulla volutpat</li>
+            </ul>
+            <hr><br>
+          </div>
+          <div id="type-lists-descriptions">
+            <h4>1.6.3. Description lists</h4>
+            <p>Use <code>&lt;dl&gt;</code>, <code>&lt;dt&gt;</code> and <code>&lt;dd&gt;</code> to make a list of terms with their associated descriptions.</p>
+            <hr>
+            <dl>
+              <dt>Description lists</dt>
+              <dd>A description list is perfect for defining terms.</dd>
+              <dt>Euismod</dt>
+              <dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
+              <dd>Donec id elit non mi porta gravida at eget metus.</dd>
+              <dt>Malesuada porta</dt>
+              <dd>Etiam porta sem malesuada magna mollis euismod.</dd>
+            </dl>
+            <hr><br>
+          </div>
+          <div id="type-lists-horizontaldescriptions">
+            <h4>1.6.4. Horizontal description lists</h4>
+            <p>Use <code>.dl-horizontal</code> to make terms and descriptions in <code>&lt;dl&gt;</code> line up side-by-side.</p>
+            <p>Horizontal description lists will truncate terms that are too long to fit in the left column with <code>text-overflow</code>. In narrower viewports, they will change to the default stacked layout.</p>
+            <hr>
+            <dl class="dl-horizontal">
+              <dt>Description lists</dt>
+              <dd>A description list is perfect for defining terms.</dd>
+              <dt>Euismod</dt>
+              <dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
+              <dd>Donec id elit non mi porta gravida at eget metus.</dd>
+              <dt>Malesuada porta</dt>
+              <dd>Etiam porta sem malesuada magna mollis euismod.</dd>
+              <dt>Felis euismod semper eget lacinia</dt>
+              <dd>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</dd>
+            </dl>
+            <hr><br>
+          </div>
+        </div>
+      </div>
+      <div id="code">
+        <h2>2. Code</h2>
+        <div id="code-inline">
+          <h3>2.1. Inline</h3>
+          <p>Wrap inline snippets of code with <code>&lt;code&gt;</code>.</p>
+          <hr>
+          <p>For example, <code>&lt;section&gt;</code> should be wrapped as inline.</p>
+          <hr><br>
+        </div>
+        <div id="code-input">
+          <h3>2.2. User Input</h3>
+          <p>Use the <code>&lt;kbd&gt;</code> to indicate input that is typically entered via keyboard.</p>
+          <hr>
+          <p>To switch directories, type <kbd>cd</kbd> followed by the name of the directory.</p>
+          <p>To edit settings, press <kbd><kbd>ctrl</kbd> + <kbd>,</kbd></kbd></p>
+          <hr><br>
+        </div>
+        <div id="code-block">
+          <h3>2.3. Basic block</h3>
+          <p>Use <code>&lt;pre&gt;</code> for multiple lines of code. Be sure to escape any angle brackets in the code for proper rendering.</p>
+          <hr><pre>&lt;p&gt;Sample text here...&lt;/p&gt;</pre>
+          <hr><br>
+        </div>
+        <div id="code-scrollable">
+          <h3>2.4. Scrollable block</h3>
+          <p><em>Description</em></p>
+          <hr>
+          <pre class="pre-scrollable">
+            <p>&lt;p&gt;Sample text here...&lt;/p&gt;</p>
+            <p>&lt;p&gt;Sample text here...&lt;/p&gt;</p>
+            <p>&lt;p&gt;Sample text here...&lt;/p&gt;</p>
+            <p>&lt;p&gt;Sample text here...&lt;/p&gt;</p>
+            <p>&lt;p&gt;Sample text here...&lt;/p&gt;</p></pre>
+          <hr><br>
+        </div>
+        <div id="code-output">
+          <h3>2.5. Sample output</h3>
+          <p>For indicating blocks sample output from a program use the <code>&lt;samp&gt;</code> tag.</p>
+          <hr><samp>This text is meant to be treated as sample output from a computer program.</samp>
+          <hr><br>
+        </div>
+      </div>
+      <div id="tables">
+        <h2>3. Tables</h2>
+        <div id="tables-basic">
+          <h3>3.1. Basic Table</h3>
+          <p>For basic styling—light padding and only horizontal dividers—add the base class <code>.table</code> to any <code>&lt;table&gt;</code>. It may seem super redundant, but given the widespread use of tables for other plugins like calendars and date pickers, we've opted to isolate our custom table styles.</p>
+          <hr>
+          <table class="table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Username</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Larry</td>
+                <td>the Bird</td>
+                <td>@twitter</td>
+              </tr>
+            </tbody>
+          </table>
+          <hr><br>
+        </div>
+        <div id="tables-striped">
+          <h3>3.2. Striped rows</h3>
+          <p>Use <code>.table-striped</code> to add zebra-striping to any table row within the <code>&lt;tbody&gt;</code>.</p>
+          <p>Striped tables are styled via the <code>:nth-child</code> CSS selector, which is not available in Internet Explorer 8.</p>
+          <hr>
+          <table class="table tables-striped">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Username</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Larry</td>
+                <td>the Bird</td>
+                <td>@twitter</td>
+              </tr>
+            </tbody>
+          </table>
+          <hr><br>
+        </div>
+        <div id="tables-bordered">
+          <h3>3.3. Bordered table</h3>
+          <p>Add <code>.table-bordered</code> for borders on all sides of the table and cells.</p>
+          <hr>
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Username</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td rowspan="2">1</td>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+              </tr>
+              <tr>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@TwBootstrap</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td colspan="2">Larry the Bird</td>
+                <td>@twitter</td>
+              </tr>
+            </tbody>
+          </table>
+          <hr><br>
+        </div>
+        <div id="tables-hover">
+          <h3>3.4. Hover rows</h3>
+          <p>Add <code>.table-hover</code> to enable a hover state on table rows within a <code>&lt;tbody&gt;</code>.</p>
+          <hr>
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Username</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Larry</td>
+                <td>the Bird</td>
+                <td>@twitter</td>
+              </tr>
+            </tbody>
+          </table>
+          <hr><br>
+        </div>
+        <div id="tables-condensed">
+          <h3>3.5. Condensed table</h3>
+          <p>Add <code>.table-condensed</code> to make tables more compact by cutting cell padding in half.</p>
+          <hr>
+          <table class="table table-condensed">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Username</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td colspan="2">Larry the Bird</td>
+                <td>@twitter</td>
+              </tr>
+            </tbody>
+          </table>
+          <hr><br>
+        </div>
+        <div id="tables-contextual">
+          <h3>3.6. Contextual classes</h3>
+          <p>Use contextual classes to color table rows or individual cells.</p>
+          <hr>
+          <table class="table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Class</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="active">
+                <td>1</td>
+                <td><code>.active</code></td>
+                <td>Applies the hover color to a particular row or cell</td>
+              </tr>
+              <tr class="success">
+                <td>2</td>
+                <td><code>.success</code></td>
+                <td>Indicates a successful or positive action</td>
+              </tr>
+              <tr class="info">
+                <td>3</td>
+                <td><code>.info</code></td>
+                <td>Indicates a neutral informative change or action</td>
+              </tr>
+              <tr class="warning">
+                <td>4</td>
+                <td><code>.warning</code></td>
+                <td>Indicates a warning that might need attention</td>
+              </tr>
+              <tr class="danger">
+                <td>5</td>
+                <td><code>.danger</code></td>
+                <td>Indicates a dangerous or potentially negative action</td>
+              </tr>
+            </tbody>
+          </table>
+          <hr><br>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

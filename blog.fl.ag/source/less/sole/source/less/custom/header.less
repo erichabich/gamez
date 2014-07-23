@@ -1,0 +1,70 @@
+// -------------------
+//  Blog.fl.ag header
+// -------------------
+
+@logo-size:     86px;
+@outer-gutter:  (@grid-gutter-width * 2);
+@header-border: #332E2C;
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  min-width: 640px;
+}
+
+body > header {
+  width: 100%;
+  border-top: 3px solid @header-border;
+}
+
+.logo img {
+  width: @logo-size;
+  height: @logo-size;
+  margin-top: @outer-gutter;
+  margin-bottom: @outer-gutter;
+}
+
+.navigation {
+  margin-top: @outer-gutter;
+
+  .tooltip {
+    position:relative;
+  } 
+
+  .tooltip a {
+    text-transform: uppercase;
+    line-height: @logo-size;
+    margin-left: @outer-gutter;
+  }
+
+  .tooltip p {
+    display: none;
+    max-width: 350px;
+    font-size: 12px;
+    font-family: @font-family-monospace;
+    white-space: nowrap;
+    border-radius: 5px;
+    background-color: @header-border;
+    color: #f1f2f2;
+    padding: 4px 12px;
+    margin: 0;
+    position: absolute;
+    bottom: -3px;
+    right: 0;
+    z-index: 99;
+  }
+
+  .tooltip p:before {
+    border: solid;
+    border-color: #333 transparent;
+    border-width: 0px 6px 6px 6px;
+    bottom: 25px;
+    right: 28px;
+    content: "";
+    position: absolute;
+    z-index: 99;
+  }
+}
